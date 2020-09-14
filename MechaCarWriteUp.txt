@@ -1,0 +1,24 @@
+Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+Both vehicle length and ground clearance have a p value of less than 0.05 and therefore have have provided a non-random amount of variance.
+
+Is the slope of the linear model considered to be zero? Why or why not?
+No because the P Value of the y intercept is less than 0.05 
+
+Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
+Yes, it predicts the model at around 70% effeciency. Although the data at hand is not as detailed as we'd like, it is still very effective considering the lack of data.
+
+Suspension Summary
+Lot 1 and Lot 2 both meet the design specification while Lot 3 is above the 100 pounds per square inch. 
+
+T-Test
+The pound-per-inch results are, in fact, statistically different from the mean of 1,500 pounds by 3.175955. 
+
+My Own Study
+In order to compare the prototype to other cars we first need to find similar cars in weight, length, and height with similar engines. The cars should be as similar as possible so the comparisons can be as accurate as possible. The three important questions that we need to figure out are:
+
+How effiecent is the gas usage?
+How stable and safe is the car?
+What would the price be for each car?
+
+
+

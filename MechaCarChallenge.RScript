@@ -1,0 +1,11 @@
+mechacar_data <- read.csv('MechaCar_mpg.csv') #import dataset
+
+model <- lm(mpg ~ vehicle.length + vehicle.weight + spoiler.angle + ground.clearance,data=mechacar_data) #generate multiple linear regression model
+
+summary(model) #generate summary statistics
+
+
+suspension_data <- read.csv('Suspension_Coil.csv') #import dataset
+suspension_summary <- suspension_data %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI),Median_PSI=median(PSI),PSI_Variance=var(PSI), stddev_PSI=sd(PSI) ) #create summary table with multiple columns
+
+t.test(log10(suspension_summary$Mean_PSI),mu=mean(log10(suspension_summary$PSI_Variance))) #compare sample versus population means
